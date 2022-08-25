@@ -1,8 +1,15 @@
-const logger = require('../utils/logger');
-const express = require('express');
+const logger = require("../utils/logger");
+const express = require("express");
 const router = express.Router();
 
-router.route('/stores')
-  .get(function(){logger.info("pending validations")}, function(){logger.info("pending use case")});
+router
+  .get(
+    "/stores",
+    async (req, res) => {
+      logger.info("something")
+      return res.send("something")
+    }
+  );
 
 module.exports = router;
+
