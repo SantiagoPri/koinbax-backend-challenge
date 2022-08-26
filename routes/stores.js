@@ -1,8 +1,7 @@
 const logger = require("../utils/logger");
 const express = require("express");
 const { getStoresByPage, createStore } = require("../services/stores");
-const { validateAndFormat } = require("../validations/store");
-const { checkParam } = require("../utils/decorators");
+const { validateAndFormat, checkParam } = require("../validations/store");
 const router = express.Router();
 
 router.get("/stores/", async (req, res) => {
