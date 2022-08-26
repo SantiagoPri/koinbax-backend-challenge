@@ -7,7 +7,7 @@ const verifyUser = async (req, res, next) => {
     const credentials = await auth(req);
     if (!(credentials && credentials.name && credentials.pass)) {
       res.statusCode = 401;
-      res.end("Unauthorized");
+      return res.end("Unauthorized");
     }
     const query = await User.find({ username: credentials.name }).exec();
     if (query.lenght > 1) {
@@ -20,11 +20,11 @@ const verifyUser = async (req, res, next) => {
       next();
     } else {
       res.statusCode = 401;
-      res.end("Unauthorized");
+      return res.end("Unauthorized");
     }
   } catch (error) {
     res.statusCode = 500;
-    res.end("Internal server error");
+    return res.end("internalError");
   }
 };
 
