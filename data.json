@@ -176,7 +176,7 @@
     "Concepto 3": "Cocteleria",
     "Concepto 4": "Club nocturno",
     "Balance actual": "$400",
-    "Activo": "si",
+    "Activo": "Si",
     "Ultima venta": "2022-4-21"
   },
   {
@@ -238,7 +238,7 @@
     "Concepto 5": "Restaurante",
     "Concepto 6": "Comidas rapidas",
     "Balance actual": "$800",
-    "Activo": "si",
+    "Activo": "Si",
     "Ultima venta": "2022-3-20"
   },
   {
@@ -249,7 +249,7 @@
     "Concepto 3": "Comida rapida",
     "Concepto 4": "Cafeteria",
     "Balance actual": "$850",
-    "Activo": "no",
+    "Activo": "No",
     "Ultima venta": "2021-1-15"
   },
   {
@@ -262,7 +262,7 @@
     "Concepto 5": "Turismo",
     "Concepto 6": "Comidas rapidas",
     "Balance actual": "$2200",
-    "Activo": "no",
+    "Activo": "No",
     "Ultima venta": "2018-4-2"
   },
   {
@@ -333,7 +333,7 @@
     "Concepto 3": "Cocteleria",
     "Concepto 4": "Club nocturno",
     "Balance actual": "$990",
-    "Activo": "si",
+    "Activo": "Si",
     "Ultima venta": "2020-6-18"
   },
   {
@@ -370,7 +370,7 @@
     "Concepto 4": "Club nocturno",
     "Concepto 5": "Turismo",
     "Balance actual": "$2200",
-    "Activo": "no",
+    "Activo": "No",
     "Ultima venta": "2018-7-22"
   },
   {
@@ -394,7 +394,7 @@
     "Concepto 5": "Plotter",
     "Concepto 6": "Impresiones",
     "Balance actual": "$6600",
-    "Activo": "no",
+    "Activo": "No",
     "Ultima venta": "2018-5-3"
   },
   {
@@ -467,7 +467,7 @@
     "Concepto 5": "Distribuidor",
     "Concepto 6": "Cantera",
     "Balance actual": "$2200",
-    "Activo": "no",
+    "Activo": "No",
     "Ultima venta": "2018-2-30"
   },
   {
@@ -479,7 +479,7 @@
     "Concepto 4": "Club nocturno",
     "Concepto 5": "Distribuidor",
     "Balance actual": "$800",
-    "Activo": "si",
+    "Activo": "Si",
     "Ultima venta": "2022-4-28"
   },
   {
@@ -492,7 +492,7 @@
     "Concepto 5": "Plotter",
     "Concepto 6": "Impresiones",
     "Balance actual": "$600",
-    "Activo": "si",
+    "Activo": "Si",
     "Ultima venta": "2022-5-15"
   },
   {
@@ -516,7 +516,7 @@
     "Concepto 4": "Estetica",
     "Concepto 5": "Peluqueria",
     "Balance actual": "$2500",
-    "Activo": "si",
+    "Activo": "Si",
     "Ultima venta": "2020-2-16"
   },
   {
@@ -540,7 +540,7 @@
     "Concepto 5": "Restaurante",
     "Concepto 6": "Comidas rapidas",
     "Balance actual": "$300",
-    "Activo": "si",
+    "Activo": "Si",
     "Ultima venta": "2022-6-24"
   },
   {
@@ -551,7 +551,7 @@
     "Concepto 3": "Comida rapida",
     "Concepto 4": "Cafeteria",
     "Balance actual": "$850",
-    "Activo": "no",
+    "Activo": "No",
     "Ultima venta": "2021-1-15"
   },
   {
@@ -564,7 +564,7 @@
     "Concepto 5": "Turismo",
     "Concepto 6": "Comidas rapidas",
     "Balance actual": "$200",
-    "Activo": "si",
+    "Activo": "Si",
     "Ultima venta": "20224-12"
   },
   {
@@ -576,7 +576,7 @@
     "Concepto 4": "Club nocturno",
     "Concepto 5": "Turismo",
     "Balance actual": "$530",
-    "Activo": "no",
+    "Activo": "No",
     "Ultima venta": "2012-5-30"
   },
   {
@@ -602,7 +602,7 @@
     "Concepto 5": "Plotter",
     "Concepto 6": "Impresiones",
     "Balance actual": "$2500",
-    "Activo": "no",
+    "Activo": "No",
     "Ultima venta": "2021-4-13"
   }
 ]
