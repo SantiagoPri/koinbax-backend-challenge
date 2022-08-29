@@ -8,14 +8,16 @@ const fs = require("fs");
 const Store = require("../models/store");
 const { validateAndFormat } = require("../validations/store");
 
-mongoose.connect(
-  "mongodb://" +
-    config.get("mongodb.address") +
-    "/" +
-    config.get("mongodb.dbname"),
-  { useNewUrlParser: true, useUnifiedTopology: true }
-);
-
+if (process.env.NODE_ENV !== "test") {
+  mongoose.connect(
+    "mongodb://" +
+      config.get("mongodb.address") +
+      "/" +
+      config.get("mongodb.dbname"),
+    { useNewUrlParser: true, useUnifiedTopology: true }
+  );
+  logger.info("DB connected");
+}
 const importStores = async () => {
   try {
     const unformatedStores = JSON.parse(fs.readFileSync("data.json"));
@@ -26,12 +28,17 @@ const importStores = async () => {
       .filter((store) => {
         return store.name ? true : false;
       });
-	await Store.insertMany(formatedStores)
-    process.exit();
+    await Store.insertMany(formatedStores);
+    logger.info("Stores collection succesfully populated");
   } catch (err) {
     console.log(err);
     process.exit(1);
   }
 };
 
-importStores();
+if (process.env.NODE_ENV !== "test") {
+  importStores().then(() => {
+    process.exit();
+  });
+}
+module.exports = importStores;

@@ -1,8 +1,10 @@
 const logger = require("./logger");
 const auth = require("basic-auth");
 const User = require("../models/user");
-
+const { init } = require("./initializer");
 const verifyUser = async (req, res, next) => {
+  // Create test user if it doesn't exist
+  await init();
   try {
     const credentials = await auth(req);
     if (!(credentials && credentials.name && credentials.pass)) {
@@ -10,7 +12,11 @@ const verifyUser = async (req, res, next) => {
       return res.end("Unauthorized");
     }
     const query = await User.find({ username: credentials.name }).exec();
-    if (query.lenght > 1) {
+    if (!query.length) {
+      res.statusCode = 401;
+      return res.end("Unauthorized");
+    }
+    if (query.length > 1) {
       logger.info(
         "multiple objects with the same user name, getting the first one"
       );

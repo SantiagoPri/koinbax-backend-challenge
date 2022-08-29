@@ -14,7 +14,7 @@ router.get("/stores/", async (req, res) => {
     }
     return res.send(response);
   } catch (error) {
-    logger.error(error);
+    logger.debug(error);
     res.status(500);
     return res.send("internalError");
   }
