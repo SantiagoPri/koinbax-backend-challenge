@@ -2,7 +2,6 @@ const request = require("supertest");
 const mongoose = require("mongoose");
 const app = require("../../api/app.js");
 const { mockedSuccesfullStore } = require("../../__mocks__/stores.js");
-// const services = require("../../services/stores.js");
 const populateStores = require("../../seeders/importStores");
 const clearStores = require("../../seeders/clearStores.js");
 
@@ -24,8 +23,6 @@ describe("Api routes for stores", () => {
   });
 
   describe("GET api/stores", () => {
-    //const getStoresBypageFn = jest.spyOn(services, "getStoresByPage");
-
     it("Gets Unathorized response", async () => {
       const response = await request(app)
         .get("/api/stores?q={'page':2,'limit':2}")
@@ -35,10 +32,6 @@ describe("Api routes for stores", () => {
     });
 
     it("Works when sending page and limit", async () => {
-      //   getStoresBypageFn.getMockImplementation(
-      //     async () => mockedSuccesfullStore
-      //   );
-
       // Populate the database for the Happy path
       await populateStores();
 
